@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n){
+        return Math.round(Math.random() * n);
+    }
+
+    let numeroPensado = sorteia(10);
+    
+    console.log(numeroPensado);
+    
+    var tentativas = 1;
+
+    while (tentativas <= 3) {
+        var chute = Number(prompt("Digite seu chute: "));
+        if (chute == numeroPensado) {
+            mostra("Você acertou! O número pensado era " + numeroPensado);
+            break;
+        } else {
+            mostra("Você errou!");
+        }
+        tentativas++;
+    }
+    mostra("FIM");
+</script>
