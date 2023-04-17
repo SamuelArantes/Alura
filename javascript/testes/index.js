@@ -1,11 +1,11 @@
-let user = {
-    perfil: 'estudante'
-   }
+ let user = {
+     perfil: 'estudante'
+    }
    
-   let estudante = {
-    nome: 'juliana'
-   }
+    let estudante = {
+     nome: 'juliana5454'
+    }
    
-   Object.setPrototypeOf(estudante, user)
+    Object.setPrototypeOf(estudante, user)
 
-   console.log(estudante.nome, estudante.perfil)
+    console.log(estudante.nome, estudante.perfil)
