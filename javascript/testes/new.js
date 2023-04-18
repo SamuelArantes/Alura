@@ -10,3 +10,4 @@ function User(nome, email){
 const novoUser = new User('Samuel', 'samuel@gmail.com')
 console.log(novoUser.exibirInfos())
 
+console.log('testando novas implementações')
